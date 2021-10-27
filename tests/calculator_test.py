@@ -26,3 +26,14 @@ def test_calculator_subtract():
     calc = Calculator()
     calc.subtract_number(1)
     assert calc.get_result() == -1
+
+def test_calculator_multiply():
+    calc = Calculator()
+    result = calc.multiply_numbers(1, 2)
+    assert result == 2
+
+def test_calculator_divide():
+    calc = Calculator()
+    result = calc.divide_numbers(4, 2)
+    assert result == 2
+
