@@ -28,5 +28,11 @@ class Calculator:
         return self.result
     def divide_numbers(self, value_a, value_b):
         """ divides number by result """
-        self.result = value_a / value_b
+        if value_a == 0:
+            print (0)
+        elif value_b == 0:
+            print ("error")
+        else:
+            self.result = value_a / value_b
+
         return self.result
